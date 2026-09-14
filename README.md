@@ -16,6 +16,7 @@ A modular comparative framework evaluating deep sequence architectures (GRU, Tra
 
 ## Project Structure
 
+```
 EnergyTSF/
 ├── configs/
 │   ├── final_runs/          # Tuned execution configs (L96 & L192)
@@ -32,15 +33,17 @@ EnergyTSF/
 ├── windows11/               # Windows evaluation scripts and final publication figures
 ├── requirements.txt         # Environment dependencies
 └── notes.md                 # Original setup and data notes
+```
 
 ---
 
 ## Dataset Setup
 
-*** Datasets Source [https://github.com/wzhwzhwzh0921/S-D-Mamba/releases/tag/datasets](https://github.com/wzhwzhwzh0921/S-D-Mamba/releases/tag/datasets)
+*** Datasets Source https://github.com/wzhwzhwzh0921/S-D-Mamba/releases/tag/datasets
 
 Extract S-Mamba_datasets.zip and place the files inside data/:
 
+```
 data/
 ├── ECL/
 │   ├── behind_electricity.csv
@@ -51,24 +54,27 @@ data/
     ├── ETTh2.csv
     ├── ETTm1.csv
     └── ETTm2.csv
+```
 
 ---
 
 ## Installation and Execution
 
-Clone the repository:
+```bash
+# Clone the repository
 git clone [https://github.com/franztac/EnergyTSF.git](https://github.com/franztac/EnergyTSF.git)
 cd EnergyTSF
 
-Install dependencies:
+# Install dependencies
 pip install -r requirements.txt
+```
 
-Hyperparameter Search:
-Optuna tuning runs are configured via YAML specs located in configs/search_spaces/.
-Open and run notebooks/optuna_tuning.ipynb to initiate automated study trials.
+**Hyperparameter Search:**
+Optuna tuning runs are configured via YAML specs located in `configs/search_spaces/`.
+Open and run `notebooks/optuna_tuning.ipynb` to initiate automated study trials.
 
-Final Model Training & Evaluation:
-To execute runs using the optimal configuration profiles, execute final_run.ipynb or call the run executor directly using targets in configs/final_runs/.
+**Final Model Training & Evaluation:**
+To execute runs using the optimal configuration profiles, execute `final_run.ipynb` or call the run executor directly using targets in `configs/final_runs/`.
 
-Visualizations:
-Comparative figures, error distributions, and lookback impact charts are generated through windows11/utils/ and stored in windows11/figures/.
+**Visualizations:**
+Comparative figures, error distributions, and lookback impact charts are generated through `windows11/utils/` and stored in `windows11/figures/`.
