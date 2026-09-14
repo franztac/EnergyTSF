@@ -1,5 +1,6 @@
-*** Repo Structure
+# Repo Structure
 
+```text
 EnergyTSF/
 ├── configs/
 │   └── search_spaces/         # YAML search spaces for Optuna tuning
@@ -7,7 +8,7 @@ EnergyTSF/
 ├── data/                      # Raw CSV datasets (download separately)
 │   ├── ETT/
 │   └── ECL/
-|
+│
 ├── docs/                      # Thesis and defense presentation
 │   ├── thesis.pdf
 │   └── thesis_presentation.pdf
@@ -54,12 +55,17 @@ EnergyTSF/
 │
 ├── requirements.txt
 └── notes.md
+```
 
+---
 
-*** Datasets Source
+# Datasets Source
+
 https://github.com/wzhwzhwzh0921/S-D-Mamba/releases/tag/datasets
 
-# Extract S-Mamba_datasets.zip and place the files inside data/:
+## Extract S-Mamba_datasets.zip and place the files inside data/:
+
+```text
 data/ECL/
 ├── behind_electricity.csv
 ├── electricity.csv
@@ -70,3 +76,4 @@ data/ETT/
 ├── ETTh2.csv
 ├── ETTm1.csv
 └── ETTm2.csv
+```
