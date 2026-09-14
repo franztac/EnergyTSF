@@ -1,0 +1,18 @@
+meta:
+  data_name: ECL
+  model_name: gru
+  token_style: variate
+  window: 192
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 512
+  num_layers: 4
+  dropout: 0.09739006980562406
+  bidirectional: true
+
+  lr: 0.00005750933433344481
+  weight_decay: 4.765159462273803e-06
+  scheduler_factor: 0.4819304843160785
+  scheduler_patience: 3

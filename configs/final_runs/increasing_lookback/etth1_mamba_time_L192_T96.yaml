@@ -1,0 +1,31 @@
+meta:
+  data_name: ETTh1
+  model_name: mamba
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 128
+  num_layers: 1
+  d_state: 32
+  expand: 4
+  d_conv: 4
+  d_ff: 256
+
+  dt_rank: auto
+  dt_min: 0.001
+  dt_max: 0.1
+  use_fast_path: true
+
+  bidirectional: false
+  dropout: 0.18587142040314492
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.00016898643487174523
+  weight_decay: 2.351644621627571e-05
+  scheduler_factor: 0.48070845583121097
+  scheduler_patience: 2

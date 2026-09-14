@@ -1,0 +1,28 @@
+meta:
+  data_name: ETTh1
+  model_name: transformer
+  token_style: time
+  window: 96
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 256
+  num_layers: 2
+  nhead: 4
+  dim_feedforward: 256
+  activation: "relu"
+  norm_first: true
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+  pos_emb: "sin"
+
+  dropout: 0.2633559429234201
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.0001455126500122439
+  weight_decay: 5.948926140805924e-06
+  scheduler_factor: 0.4496305306628037
+  scheduler_patience: 3

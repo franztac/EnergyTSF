@@ -1,0 +1,60 @@
+meta:
+  data_name: ETTh1
+  model_name: gru
+  token_style: time
+  window: 96
+  horizon: 96
+  channels: 7
+
+fixed_params: {}
+
+search_space:
+  lr:
+    type: float
+    low: 1.5e-4
+    high: 2.8e-4
+    log: true
+
+  weight_decay:
+    type: float
+    low: 1.0e-6
+    high: 2.5e-5
+    log: true
+
+  d_model:
+    type: categorical
+    choices: [256]
+
+  num_layers:
+    type: categorical
+    choices: [1, 2]
+
+  pooling:
+    type: categorical
+    choices: ["last"]
+
+  bidirectional:
+    type: categorical
+    choices: [true]
+
+  temperature:
+    type: float
+    low: 0.8
+    high: 1.5
+    log: false
+
+  dropout:
+    type: float
+    low: 0.10
+    high: 0.18
+    log: false
+
+  scheduler_factor:
+    type: float
+    low: 0.46
+    high: 0.60
+    log: false
+
+  scheduler_patience:
+    type: categorical
+    choices: [3]

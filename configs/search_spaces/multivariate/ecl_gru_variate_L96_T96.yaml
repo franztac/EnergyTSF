@@ -1,0 +1,50 @@
+meta:
+  data_name: ECL
+  model_name: gru
+  token_style: variate
+  window: 96
+  horizon: 96
+  channels: 321
+
+fixed_params: {}
+
+search_space:
+  lr:
+    type: float
+    low: 9.0e-5
+    high: 3.5e-4
+    log: true
+
+  weight_decay:
+    type: float
+    low: 3.0e-6
+    high: 1.0e-4
+    log: true
+
+  d_model:
+    type: categorical
+    choices: [512]
+
+  num_layers:
+    type: categorical
+    choices: [3, 4]
+
+  bidirectional:
+    type: categorical
+    choices: [true]
+
+  dropout:
+    type: float
+    low: 0.05
+    high: 0.11
+    log: false
+
+  scheduler_factor:
+    type: float
+    low: 0.40
+    high: 0.50
+    log: false
+
+  scheduler_patience:
+    type: categorical
+    choices: [3, 4]

@@ -1,0 +1,31 @@
+meta:
+  data_name: ECL
+  model_name: mamba
+  token_style: time
+  window: 96
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 512
+  num_layers: 3
+  d_state: 8
+  expand: 2
+  d_conv: 4
+  d_ff: 128
+
+  dt_rank: auto
+  dt_min: 0.001
+  dt_max: 0.1
+  use_fast_path: true
+
+  bidirectional: true
+  dropout: 0.2599811216001546
+
+  pooling: "attention"
+  temperature: 1.556272764196267
+
+  lr: 0.00048028785755296584
+  weight_decay: 3.879783712847491e-06
+  scheduler_factor: 0.5096496496760864
+  scheduler_patience: 4

@@ -1,0 +1,24 @@
+meta:
+  data_name: ECL
+  model_name: transformer
+  token_style: variate
+  window: 96
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 512
+  num_layers: 3
+  nhead: 8
+  dim_feedforward: 1024
+  activation: "relu"
+  norm_first: true
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+
+  dropout: 0.07412356604180327
+
+  lr: 0.0006189127560854512
+  weight_decay: 1.39037839376548e-06
+  scheduler_factor: 0.5318339030906468
+  scheduler_patience: 5

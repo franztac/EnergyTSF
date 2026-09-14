@@ -1,0 +1,33 @@
+# Checkpoints & model weights
+*.pt
+*.pth
+*.ckpt
+
+# Heavy arrays
+*.npz
+*.npy
+
+# Optuna databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Large CSV datasets
+data/
+
+# Heavy experiment output directories
+runs/
+runs_debug/
+
+# Python cache & Jupyter checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Compressed files
+*.zip
+*.tar.gz
+*.7z

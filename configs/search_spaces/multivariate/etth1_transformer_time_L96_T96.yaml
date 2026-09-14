@@ -1,0 +1,78 @@
+meta:
+  data_name: ETTh1
+  model_name: transformer
+  token_style: time
+  window: 96
+  horizon: 96
+  channels: 7
+
+fixed_params:
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+
+search_space:
+  lr:
+    type: float
+    low: 7.0e-5
+    high: 1.6e-4
+    log: true
+
+  weight_decay:
+    type: float
+    low: 1.0e-6
+    high: 6.0e-6
+    log: true
+
+  d_model:
+    type: categorical
+    choices: [256]
+
+  num_layers:
+    type: categorical
+    choices: [1, 2]
+
+  nhead:
+    type: categorical
+    choices: [4]
+
+  dim_feedforward:
+    type: categorical
+    choices: [256, 512]
+
+  activation:
+    type: categorical
+    choices: ["relu"]
+
+  norm_first:
+    type: categorical
+    choices: [true]
+
+  pos_emb:
+    type: categorical
+    choices: ["sin"]
+
+  pooling:
+    type: categorical
+    choices: ["last"]
+
+  temperature:
+    type: float
+    low: 0.8
+    high: 1.5
+    log: false
+
+  dropout:
+    type: float
+    low: 0.16
+    high: 0.28
+    log: false
+
+  scheduler_factor:
+    type: float
+    low: 0.40
+    high: 0.57
+    log: false
+
+  scheduler_patience:
+    type: categorical
+    choices: [2, 3, 4]

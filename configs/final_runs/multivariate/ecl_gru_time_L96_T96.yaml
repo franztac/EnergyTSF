@@ -1,0 +1,21 @@
+meta:
+  data_name: ECL
+  model_name: gru
+  token_style: time
+  window: 96
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 1024
+  num_layers: 1
+  dropout: 0.10135198962408741
+  bidirectional: false
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.00020970452823832673
+  weight_decay: 8.006214049725339e-05
+  scheduler_factor: 0.5365896499952738
+  scheduler_patience: 3

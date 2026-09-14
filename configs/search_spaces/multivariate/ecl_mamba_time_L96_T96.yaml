@@ -1,0 +1,80 @@
+meta:
+  data_name: ECL
+  model_name: mamba
+  token_style: time
+  window: 96
+  horizon: 96
+  channels: 321
+
+fixed_params:
+  dt_rank: auto
+  dt_min: 0.001
+  dt_max: 0.1
+  use_fast_path: true
+
+search_space:
+  lr:
+    type: float
+    low: 2.0e-4
+    high: 5.0e-4
+    log: true
+
+  weight_decay:
+    type: float
+    low: 1.0e-6
+    high: 8.0e-6
+    log: true
+
+  d_model:
+    type: categorical
+    choices: [256, 512]
+
+  num_layers:
+    type: categorical
+    choices: [2, 3]
+
+  d_state:
+    type: categorical
+    choices: [8, 16]
+
+  expand:
+    type: categorical
+    choices: [1, 2]
+
+  d_conv:
+    type: categorical
+    choices: [4]
+
+  d_ff:
+    type: categorical
+    choices: [128, 256]
+
+  pooling:
+    type: categorical
+    choices: ["attention", "last"]
+
+  bidirectional:
+    type: categorical
+    choices: [true]
+
+  temperature:
+    type: float
+    low: 0.8
+    high: 1.8
+    log: false
+
+  dropout:
+    type: float
+    low: 0.10
+    high: 0.26
+    log: false
+
+  scheduler_factor:
+    type: float
+    low: 0.48
+    high: 0.58
+    log: false
+
+  scheduler_patience:
+    type: categorical
+    choices: [2, 4]

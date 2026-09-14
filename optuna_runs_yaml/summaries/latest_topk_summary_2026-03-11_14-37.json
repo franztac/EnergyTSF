@@ -1,0 +1,300 @@
+[
+  {
+    "db_path": "./optuna_runs_yaml/ECL/gru_time/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-10_20-05",
+    "yaml_path": "configs/search_spaces/multivariate/ecl_gru_time_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 20,
+        "value": 0.19349524600210583,
+        "params": {
+          "lr": 0.00020970452823832673,
+          "weight_decay": 8.006214049725339e-05,
+          "d_model": 1024,
+          "num_layers": 1,
+          "pooling": "last",
+          "bidirectional": false,
+          "dropout": 0.10135198962408741,
+          "scheduler_factor": 0.5365896499952738,
+          "scheduler_patience": 3
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ECL/gru_variate/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-10_21-12",
+    "yaml_path": "configs/search_spaces/multivariate/ecl_gru_variate_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 27,
+        "value": 0.12623252303955876,
+        "params": {
+          "lr": 0.00011501866866688962,
+          "weight_decay": 4.765159462273803e-06,
+          "d_model": 512,
+          "num_layers": 4,
+          "bidirectional": true,
+          "dropout": 0.09739006980562406,
+          "scheduler_factor": 0.4819304843160785,
+          "scheduler_patience": 3
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ECL/mamba_time/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-11_11-42",
+    "yaml_path": "configs/search_spaces/multivariate/ecl_mamba_time_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 13,
+        "value": 0.21213497119483238,
+        "params": {
+          "lr": 0.00048028785755296584,
+          "weight_decay": 3.879783712847491e-06,
+          "d_model": 512,
+          "num_layers": 3,
+          "d_state": 8,
+          "expand": 2,
+          "d_conv": 4,
+          "d_ff": 128,
+          "pooling": "attention",
+          "bidirectional": true,
+          "dropout": 0.2599811216001546,
+          "scheduler_factor": 0.5096496496760864,
+          "scheduler_patience": 4,
+          "temperature": 1.556272764196267
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ECL/mamba_variate/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-11_13-03",
+    "yaml_path": "configs/search_spaces/multivariate/ecl_mamba_variate_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 24,
+        "value": 0.12710743603233332,
+        "params": {
+          "lr": 0.0006655285592493306,
+          "weight_decay": 2.8146570532571993e-06,
+          "d_model": 256,
+          "num_layers": 1,
+          "d_state": 8,
+          "expand": 2,
+          "d_conv": 2,
+          "d_ff": 512,
+          "dropout": 0.20883419105923154,
+          "scheduler_factor": 0.4318950547834703,
+          "scheduler_patience": 2
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ECL/transformer_time/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-11_02-57",
+    "yaml_path": "configs/search_spaces/multivariate/ecl_transformer_time_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 16,
+        "value": 0.2067560262829264,
+        "params": {
+          "lr": 0.0002708326240068468,
+          "weight_decay": 5.8386799552162966e-06,
+          "d_model": 1024,
+          "num_layers": 2,
+          "nhead": 8,
+          "dim_feedforward": 4096,
+          "activation": "relu",
+          "norm_first": true,
+          "pos_emb": "sin",
+          "pooling": "last",
+          "dropout": 0.11099756667501104,
+          "scheduler_factor": 0.5653057659243387,
+          "scheduler_patience": 3
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ECL/transformer_variate/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-11_05-03",
+    "yaml_path": "configs/search_spaces/multivariate/ecl_transformer_variate_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 9,
+        "value": 0.12583328862085483,
+        "params": {
+          "lr": 0.0006189127560854512,
+          "weight_decay": 1.39037839376548e-06,
+          "d_model": 512,
+          "num_layers": 3,
+          "nhead": 8,
+          "dim_feedforward": 1024,
+          "activation": "relu",
+          "norm_first": true,
+          "dropout": 0.07412356604180327,
+          "scheduler_factor": 0.5318339030906468,
+          "scheduler_patience": 5
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ETTh1/gru_time/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-10_18-58",
+    "yaml_path": "configs/search_spaces/multivariate/etth1_gru_time_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 22,
+        "value": 0.45338814333388866,
+        "params": {
+          "lr": 0.00018128731151278876,
+          "weight_decay": 1.3857247424345708e-06,
+          "d_model": 256,
+          "num_layers": 1,
+          "pooling": "last",
+          "bidirectional": true,
+          "dropout": 0.12000870613177515,
+          "scheduler_factor": 0.4721505131676175,
+          "scheduler_patience": 3
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ETTh1/gru_variate/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-10_19-09",
+    "yaml_path": "configs/search_spaces/multivariate/etth1_gru_variate_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 28,
+        "value": 0.3706525045421673,
+        "params": {
+          "lr": 0.0005414759960562863,
+          "weight_decay": 6.411343629247723e-06,
+          "d_model": 256,
+          "num_layers": 1,
+          "bidirectional": true,
+          "dropout": 0.0973160013870552,
+          "scheduler_factor": 0.5340626250455648,
+          "scheduler_patience": 5
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ETTh1/mamba_time/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-08_22-44",
+    "yaml_path": "configs/search_spaces/multivariate/etth1_mamba_time_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 1,
+        "value": 0.515394609147709,
+        "params": {
+          "dropout": 0.23015019557706684,
+          "d_model": 512,
+          "num_layers": 3,
+          "lr": 0.000274868347162305,
+          "weight_decay": 5.335559716976079e-06,
+          "scheduler_factor": 0.40159885967509573,
+          "scheduler_patience": 5,
+          "pooling": "last",
+          "d_state": 16,
+          "expand": 1,
+          "d_conv": 4,
+          "d_ff": 128
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ETTh1/mamba_variate/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-10_19-44",
+    "yaml_path": "configs/search_spaces/multivariate/etth1_mamba_variate_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 10,
+        "value": 0.3645311610251788,
+        "params": {
+          "lr": 9.991485725453702e-05,
+          "weight_decay": 3.846460927799522e-06,
+          "d_model": 128,
+          "num_layers": 2,
+          "d_state": 4,
+          "expand": 1,
+          "d_conv": 4,
+          "d_ff": 256,
+          "dropout": 0.05015367901275551,
+          "scheduler_factor": 0.5479863298471931,
+          "scheduler_patience": 3
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ETTh1/transformer_time/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-10_19-14",
+    "yaml_path": "configs/search_spaces/multivariate/etth1_transformer_time_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 23,
+        "value": 0.42771760581644186,
+        "params": {
+          "lr": 0.0001455126500122439,
+          "weight_decay": 5.948926140805924e-06,
+          "d_model": 256,
+          "num_layers": 2,
+          "nhead": 4,
+          "dim_feedforward": 256,
+          "activation": "relu",
+          "norm_first": true,
+          "pos_emb": "sin",
+          "pooling": "last",
+          "dropout": 0.2633559429234201,
+          "scheduler_factor": 0.4496305306628037,
+          "scheduler_patience": 3
+        }
+      }
+    ]
+  },
+  {
+    "db_path": "./optuna_runs_yaml/ETTh1/transformer_variate/L96_T96/study.db",
+    "study_name": "tuning_yaml_2026-03-10_19-23",
+    "yaml_path": "configs/search_spaces/multivariate/etth1_transformer_variate_L96_T96.yaml",
+    "top_trials": [
+      {
+        "rank": 1,
+        "trial_number": 16,
+        "value": 0.3597006056546968,
+        "params": {
+          "lr": 0.00016684288900172895,
+          "weight_decay": 4.65642322143001e-06,
+          "d_model": 256,
+          "num_layers": 2,
+          "nhead": 4,
+          "dim_feedforward": 256,
+          "activation": "relu",
+          "norm_first": true,
+          "dropout": 0.10371794897306463,
+          "scheduler_factor": 0.42920597823102746,
+          "scheduler_patience": 2
+        }
+      }
+    ]
+  }
+]

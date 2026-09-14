@@ -1,0 +1,50 @@
+{
+  "ECL/gru_time/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-10_20-05",
+    "best_value": 0.19349524600210583
+  },
+  "ECL/gru_variate/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-10_21-12",
+    "best_value": 0.12623252303955876
+  },
+  "ECL/mamba_time/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-11_11-42",
+    "best_value": 0.21213497119483238
+  },
+  "ECL/mamba_variate/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-11_13-03",
+    "best_value": 0.12710743603233332
+  },
+  "ECL/transformer_time/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-10_07-07",
+    "best_value": 0.20583748334892263
+  },
+  "ECL/transformer_variate/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-11_05-03",
+    "best_value": 0.12583328862085483
+  },
+  "ETTh1/gru_time/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-10_18-58",
+    "best_value": 0.45338814333388866
+  },
+  "ETTh1/gru_variate/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-08_22-48",
+    "best_value": 0.3701732073511396
+  },
+  "ETTh1/mamba_time/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-08_18-38",
+    "best_value": 0.48669847617161166
+  },
+  "ETTh1/mamba_variate/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-10_19-44",
+    "best_value": 0.3645311610251788
+  },
+  "ETTh1/transformer_time/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-08_22-46",
+    "best_value": 0.40564202770135505
+  },
+  "ETTh1/transformer_variate/L96_T96": {
+    "best_study": "tuning_yaml_2026-03-10_19-23",
+    "best_value": 0.3597006056546968
+  }
+}

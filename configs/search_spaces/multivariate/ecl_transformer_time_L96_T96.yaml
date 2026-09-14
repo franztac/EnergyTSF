@@ -1,0 +1,78 @@
+meta:
+  data_name: ECL
+  model_name: transformer
+  token_style: time
+  window: 96
+  horizon: 96
+  channels: 321
+
+fixed_params:
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+
+search_space:
+  lr:
+    type: float
+    low: 2.0e-4
+    high: 6.5e-4
+    log: true
+
+  weight_decay:
+    type: float
+    low: 1.5e-6
+    high: 1.2e-5
+    log: true
+
+  d_model:
+    type: categorical
+    choices: [512, 1024]
+
+  num_layers:
+    type: categorical
+    choices: [2, 3]
+
+  nhead:
+    type: categorical
+    choices: [8]
+
+  dim_feedforward:
+    type: categorical
+    choices: [2048, 4096]
+
+  activation:
+    type: categorical
+    choices: ["relu"]
+
+  norm_first:
+    type: categorical
+    choices: [true]
+
+  pos_emb:
+    type: categorical
+    choices: ["sin"]
+
+  pooling:
+    type: categorical
+    choices: ["last"]
+
+  temperature:
+    type: float
+    low: 0.8
+    high: 1.5
+    log: false
+
+  dropout:
+    type: float
+    low: 0.10
+    high: 0.14
+    log: false
+
+  scheduler_factor:
+    type: float
+    low: 0.50
+    high: 0.60
+    log: false
+
+  scheduler_patience:
+    type: categorical
+    choices: [3, 4]

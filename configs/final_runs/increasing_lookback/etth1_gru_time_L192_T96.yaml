@@ -1,0 +1,21 @@
+meta:
+  data_name: ETTh1
+  model_name: gru
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 256
+  num_layers: 1
+  dropout: 0.12000870613177515
+  bidirectional: true
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.00018128731151278876
+  weight_decay: 1.3857247424345708e-06
+  scheduler_factor: 0.4721505131676175
+  scheduler_patience: 3

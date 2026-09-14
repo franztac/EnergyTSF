@@ -1,0 +1,322 @@
+=== ecl_gru_time_L192_T96.yaml ===
+meta:
+  data_name: ECL
+  model_name: gru
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 1024
+  num_layers: 1
+  dropout: 0.10135198962408741
+  bidirectional: false
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.00010485226411916336
+  weight_decay: 8.006214049725339e-05
+  scheduler_factor: 0.5365896499952738
+  scheduler_patience: 3
+
+=== ecl_gru_variate_L192_T96.yaml ===
+meta:
+  data_name: ECL
+  model_name: gru
+  token_style: variate
+  window: 192
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 512
+  num_layers: 4
+  dropout: 0.09739006980562406
+  bidirectional: true
+
+  lr: 0.00005750933433344481
+  weight_decay: 4.765159462273803e-06
+  scheduler_factor: 0.4819304843160785
+  scheduler_patience: 3
+
+=== ecl_mamba_time_L192_T96.yaml ===
+meta:
+  data_name: ECL
+  model_name: mamba
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 512
+  num_layers: 3
+  d_state: 8
+  expand: 2
+  d_conv: 4
+  d_ff: 128
+
+  dt_rank: auto
+  dt_min: 0.001
+  dt_max: 0.1
+  use_fast_path: true
+
+  bidirectional: true
+  dropout: 0.2599811216001546
+
+  pooling: "attention"
+  temperature: 1.556272764196267
+
+  lr: 0.00024014392877648292
+  weight_decay: 3.879783712847491e-06
+  scheduler_factor: 0.5096496496760864
+  scheduler_patience: 4
+
+=== ecl_mamba_variate_L192_T96.yaml ===
+meta:
+  data_name: ECL
+  model_name: mamba
+  token_style: variate
+  window: 192
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 256
+  num_layers: 1
+  d_state: 8
+  expand: 2
+  d_conv: 2
+  d_ff: 512
+
+  dt_rank: auto
+  dt_min: 0.001
+  dt_max: 0.1
+  use_fast_path: true
+
+  dropout: 0.20883419105923154
+
+  lr: 0.0003327642796246653
+  weight_decay: 2.8146570532571993e-06
+  scheduler_factor: 0.4318950547834703
+  scheduler_patience: 2
+
+=== ecl_transformer_time_L192_T96.yaml ===
+meta:
+  data_name: ECL
+  model_name: transformer
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 1024
+  num_layers: 2
+  nhead: 8
+  dim_feedforward: 4096
+  activation: "relu"
+  norm_first: true
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+  pos_emb: "sin"
+
+  dropout: 0.11099756667501104
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.0001354163120034234
+  weight_decay: 5.8386799552162966e-06
+  scheduler_factor: 0.5653057659243387
+  scheduler_patience: 3
+
+=== ecl_transformer_variate_L192_T96.yaml ===
+meta:
+  data_name: ECL
+  model_name: transformer
+  token_style: variate
+  window: 192
+  horizon: 96
+  channels: 321
+
+params:
+  d_model: 512
+  num_layers: 3
+  nhead: 8
+  dim_feedforward: 1024
+  activation: "relu"
+  norm_first: true
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+
+  dropout: 0.07412356604180327
+
+  lr: 0.0003094563780427256
+  weight_decay: 1.39037839376548e-06
+  scheduler_factor: 0.5318339030906468
+  scheduler_patience: 5
+
+=== etth1_gru_time_L192_T96.yaml ===
+meta:
+  data_name: ETTh1
+  model_name: gru
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 256
+  num_layers: 1
+  dropout: 0.12000870613177515
+  bidirectional: true
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.00018128731151278876
+  weight_decay: 1.3857247424345708e-06
+  scheduler_factor: 0.4721505131676175
+  scheduler_patience: 3
+
+=== etth1_gru_variate_L192_T96.yaml ===
+meta:
+  data_name: ETTh1
+  model_name: gru
+  token_style: variate
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 256
+  num_layers: 1
+  dropout: 0.0973160013870552
+  bidirectional: true
+
+  lr: 0.0005414759960562863
+  weight_decay: 6.411343629247723e-06
+  scheduler_factor: 0.5340626250455648
+  scheduler_patience: 5
+
+=== etth1_mamba_time_L192_T96.yaml ===
+meta:
+  data_name: ETTh1
+  model_name: mamba
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 128
+  num_layers: 1
+  d_state: 32
+  expand: 4
+  d_conv: 4
+  d_ff: 256
+
+  dt_rank: auto
+  dt_min: 0.001
+  dt_max: 0.1
+  use_fast_path: true
+
+  bidirectional: false
+  dropout: 0.18587142040314492
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.00016898643487174523
+  weight_decay: 2.351644621627571e-05
+  scheduler_factor: 0.48070845583121097
+  scheduler_patience: 2
+
+=== etth1_mamba_variate_L192_T96.yaml ===
+meta:
+  data_name: ETTh1
+  model_name: mamba
+  token_style: variate
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 128
+  num_layers: 2
+  d_state: 4
+  expand: 1
+  d_conv: 4
+  d_ff: 256
+
+  dt_rank: auto
+  dt_min: 0.001
+  dt_max: 0.1
+  use_fast_path: true
+
+  dropout: 0.05015367901275551
+
+  lr: 9.991485725453702e-05
+  weight_decay: 3.846460927799522e-06
+  scheduler_factor: 0.5479863298471931
+  scheduler_patience: 3
+
+=== etth1_transformer_time_L192_T96.yaml ===
+meta:
+  data_name: ETTh1
+  model_name: transformer
+  token_style: time
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 256
+  num_layers: 2
+  nhead: 4
+  dim_feedforward: 256
+  activation: "relu"
+  norm_first: true
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+  pos_emb: "sin"
+
+  dropout: 0.2633559429234201
+
+  pooling: "last"
+  temperature: 1.0
+
+  lr: 0.0001455126500122439
+  weight_decay: 5.948926140805924e-06
+  scheduler_factor: 0.4496305306628037
+  scheduler_patience: 3
+
+=== etth1_transformer_variate_L192_T96.yaml ===
+meta:
+  data_name: ETTh1
+  model_name: transformer
+  token_style: variate
+  window: 192
+  horizon: 96
+  channels: 7
+
+params:
+  d_model: 256
+  num_layers: 2
+  nhead: 4
+  dim_feedforward: 256
+  activation: "relu"
+  norm_first: true
+  layer_norm_eps: 1.0e-5
+  batch_first: true
+
+  dropout: 0.10371794897306463
+
+  lr: 0.00016684288900172895
+  weight_decay: 4.65642322143001e-06
+  scheduler_factor: 0.42920597823102746
+  scheduler_patience: 2
+
