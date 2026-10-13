@@ -2,11 +2,14 @@
 
 A modular comparative framework evaluating deep sequence architectures (GRU, Transformer, and Mamba state-space models) on multivariate energy load and transformer temperature forecasting benchmarks.
 
+The framework investigates backbone performance across long horizons alongside the structural impact of tokenization strategies (**Time-Token** vs. **Variate-Token / Inverted** representations) on temporal and inter-series dynamics.
+
 ---
 
 ## Highlights
 
 * Architectures: GRU, Transformer, and Mamba (State Space Model) implementations for long-horizon multivariate forecasting.
+* Tokenization Schemes: Time-Token (`B × L × V`, temporal steps as tokens) vs. Variate-Token (`B × V × L`, iTransformer-style channel tokens).
 * Datasets: Electricity Load Diagrams (ECL) and Electricity Transformer Temperature (ETTh1).
 * Automated Optimization: Hyperparameter tuning pipelines powered by Optuna with YAML-driven search spaces.
 * Evaluation Scenarios: Standard multivariate horizon mapping (L=96, T=96) and extended lookback evaluation (L=192, T=96).
